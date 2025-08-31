@@ -1,0 +1,263 @@
+/* Pink/Cute Dating Theme */
+:root {
+  --primary-pink: #ff6b8b;
+  --secondary-pink: #ff8fab;
+  --light-pink: #ffc2d1;
+  --lighter-pink: #ffe5ec;
+  --dark-pink: #e75480;
+  --text-dark: #333;
+  --text-light: #fff;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--lighter-pink);
+  color: var(--text-dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--light-pink) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand-name {
+  font-family: 'Pacifico', cursive; /* Romantic script font */
+  font-size: 2.5rem;
+  background: linear-gradient(
+    45deg,
+    #ff6b8b 20%,  /* Pink */
+    #ffb347 80%   /* Yellow */
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  text-shadow: none;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-pink);
+  border-color: var(--primary-pink);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-pink);
+  border-color: var(--dark-pink);
+}
+
+.btn-outline-secondary {
+  border-color: var(--primary-pink);
+  color: var(--primary-pink);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--light-pink);
+  color: var(--text-dark);
+}
+
+/* Cards */
+.card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
+  color: white;
+  padding: 5rem 0;
+}
+
+.hero-image-bg {
+  background: linear-gradient(135deg, var(--light-pink), var(--secondary-pink));
+}
+
+/* Feature Icons */
+.feature-icon-container {
+  background-color: var(--light-pink);
+  width: 70px;
+  height: 70px;
+}
+
+.feature-number {
+  color: var(--primary-pink);
+  font-size: 1.8rem;
+}
+
+/* Profile Card */
+.profile-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.profile-info {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+/* Swipe Buttons */
+.btn-swipe {
+  width: 70px;
+  height: 70px;
+  font-size: 1.8rem;
+}
+
+.btn-swipe-left {
+  background-color: white;
+  color: var(--primary-pink);
+}
+
+.btn-swipe-right {
+  background-color: var(--primary-pink);
+  border-color: var(--primary-pink);
+}
+
+/* Match Notification */
+.match-notification {
+  background-color: rgba(255, 107, 139, 0.95);
+}
+
+.match-notification-content {
+  background-color: white;
+  border-radius: 20px;
+}
+
+/* Form Elements */
+.form-control, .form-select {
+  border-radius: 10px;
+  border: 1px solid var(--light-pink);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-pink);
+  box-shadow: 0 0 0 0.25rem rgba(255, 107, 139, 0.25);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-pink);
+  color: white;
+}
+
+footer a {
+  color: white !important;
+}
+
+/* Heart Animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.heart-pulse {
+  animation: pulse 1.5s infinite;
+}
+
+/* Profile Creation */
+.profile-creation-container {
+  background-color: var(--lighter-pink);
+  min-height: 100vh;
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 107, 139, 0.2);
+  border: 1px solid var(--light-pink);
+}
+
+.profile-creation-container .progress-bar {
+  background-color: var(--primary-pink);
+}
+
+.profile-creation-container .form-check-input:checked {
+  background-color: var(--primary-pink);
+  border-color: var(--primary-pink);
+}
+
+.profile-step h4 {
+  color: var(--primary-pink);
+  border-bottom: 2px solid var(--light-pink);
+  padding-bottom: 10px;
+}
+
+#profilePictureContainer {
+  border-color: var(--light-pink) !important;
+  background-color: var(--lighter-pink);
+}
+
+#selectImageBtn {
+  border-color: var(--primary-pink);
+  color: var(--primary-pink);
+}
+
+#selectImageBtn:hover {
+  background-color: var(--primary-pink);
+  color: white;
+}
+
+/* Chat Styles */
+.chat-container {
+  height: 400px;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.chat-message {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.chat-message.received {
+  justify-content: flex-start;
+}
+
+.chat-message.sent {
+  justify-content: flex-end;
+}
+
+.message-content {
+  max-width: 70%;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.chat-message.received .message-content {
+  background-color: #f8f9fa;
+  color: var(--text-dark);
+}
+
+.chat-message.sent .message-content {
+  background-color: var(--primary-pink);
+  color: white;
+}
+
+/* Swipe Animations */
+.swipe-left-animation {
+  animation: swipeLeft 0.3s ease-out;
+}
+
+.swipe-right-animation {
+  animation: swipeRight 0.3s ease-out;
+}
+
+@keyframes swipeLeft {
+  0% { transform: translateX(0) rotate(0deg); }
+  100% { transform: translateX(-100%) rotate(-20deg); }
+}
+
+@keyframes swipeRight {
+  0% { transform: translateX(0) rotate(0deg); }
+  100% { transform: translateX(100%) rotate(20deg); }
+}
